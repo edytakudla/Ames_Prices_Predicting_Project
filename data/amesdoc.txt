@@ -13,11 +13,11 @@ Ames, Iowa Assessor’s Office
 VARIABLE DESCRIPTIONS:
 Tab characters are used to separate variables in the data file. The data has 82 columns which include 23 nominal, 23 ordinal, 14 discrete, and 20 continuous variables (and 2 additional observation identifiers).
 
-Order (Discrete): Observation number
+Order (Discrete): Observation number [cena domu]
 
-PID (Nominal): Parcel identification number  - can be used with city web site for parcel review. 
+PID (Nominal): Parcel identification number  - can be used with city web site for parcel review.  [numer dzialki]
 
-MS SubClass (Nominal): Identifies the type of dwelling involved in the sale.	
+MS SubClass (Nominal): Identifies the type of dwelling involved in the sale.	 [typ nieruchomosci oraz rok budowy]
 
        020	1-STORY 1946 & NEWER ALL STYLES
        030	1-STORY 1945 & OLDER
@@ -36,7 +36,7 @@ MS SubClass (Nominal): Identifies the type of dwelling involved in the sale.
        180	PUD - MULTILEVEL - INCL SPLIT LEV/FOYER
        190	2 FAMILY CONVERSION - ALL STYLES AND AGES
 
-MS Zoning (Nominal): Identifies the general zoning classification of the sale.
+MS Zoning (Nominal): Identifies the general zoning classification of the sale. [strefa]
 		
        A	Agriculture
        C	Commercial
@@ -47,43 +47,43 @@ MS Zoning (Nominal): Identifies the general zoning classification of the sale.
        RP	Residential Low Density Park 
        RM	Residential Medium Density
 	
-Lot Frontage (Continuous): Linear feet of street connected to property
+Lot Frontage (Continuous): Linear feet of street connected to property [liczba stóp do ulicy]
 
-Lot Area (Continuous): Lot size in square feet
+Lot Area (Continuous): Lot size in square feet [obszar dzialki w stopach kwadratowych]
 
-Street (Nominal): Type of road access to property
+Street (Nominal): Type of road access to property [ulica]
 
        Grvl	Gravel	
        Pave	Paved
        	
-Alley (Nominal): Type of alley access to property
+Alley (Nominal): Type of alley access to property [aleja]
 
        Grvl	Gravel
        Pave	Paved
        NA 	No alley access
 		
-Lot Shape (Ordinal): General shape of property
+Lot Shape (Ordinal): General shape of property [ksztalt dzialki]
 
        Reg	Regular	
        IR1	Slightly irregular
        IR2	Moderately Irregular
        IR3	Irregular
        
-Land Contour (Nominal): Flatness of the property
+Land Contour (Nominal): Flatness of the property [uksztaltowanie terenu, plaskosc dzialki]
 
        Lvl	Near Flat/Level	
        Bnk	Banked - Quick and significant rise from street grade to building
        HLS	Hillside - Significant slope from side to side
        Low	Depression
 		
-Utilities (Ordinal): Type of utilities available
+Utilities (Ordinal): Type of utilities available [Dostepne media]
 		
        AllPub	All public Utilities (E,G,W,& S)	
        NoSewr	Electricity, Gas, and Water (Septic Tank)
        NoSeWa	Electricity and Gas Only
        ELO	Electricity only	
 	
-Lot Config (Nominal): Lot configuration
+Lot Config (Nominal): Lot configuration [konfiguracja dzialki]
 
        Inside	Inside lot
        Corner	Corner lot
@@ -91,13 +91,13 @@ Lot Config (Nominal): Lot configuration
        FR2	Frontage on 2 sides of property
        FR3	Frontage on 3 sides of property
 	
-Land Slope (Ordinal): Slope of property
+Land Slope (Ordinal): Slope of property [nachylenie terenu]
 		
        Gtl	Gentle slope
        Mod	Moderate Slope	
        Sev	Severe Slope
 	
-Neighborhood (Nominal): Physical locations within Ames city limits (map available)
+Neighborhood (Nominal): Physical locations within Ames city limits (map available) [okolice w obrebie miasta Ames]
 
        Blmngtn	Bloomington Heights
        Blueste	Bluestem
@@ -128,7 +128,7 @@ Neighborhood (Nominal): Physical locations within Ames city limits (map availabl
        Timber	Timberland
        Veenker	Veenker
 			
-Condition 1 (Nominal): Proximity to various conditions
+Condition 1 (Nominal): Proximity to various conditions [bliskosc do wybranych punktow miasta]
 	
        Artery	Adjacent to arterial street
        Feedr	Adjacent to feeder street	
@@ -140,7 +140,7 @@ Condition 1 (Nominal): Proximity to various conditions
        RRNe	Within 200' of East-West Railroad
        RRAe	Adjacent to East-West Railroad
 	
-Condition 2 (Nominal): Proximity to various conditions (if more than one is present)
+Condition 2 (Nominal): Proximity to various conditions (if more than one is present) [bliskosc do wybranych punktow miasta - cd]
 		
        Artery	Adjacent to arterial street
        Feedr	Adjacent to feeder street	
@@ -152,7 +152,7 @@ Condition 2 (Nominal): Proximity to various conditions (if more than one is pres
        RRNe	Within 200' of East-West Railroad
        RRAe	Adjacent to East-West Railroad
 	
-Bldg Type (Nominal): Type of dwelling
+Bldg Type (Nominal): Type of dwelling [typ budynku]
 		
        1Fam	Single-family Detached	
        2FmCon	Two-family Conversion; originally built as one-family dwelling
@@ -160,7 +160,7 @@ Bldg Type (Nominal): Type of dwelling
        TwnhsE	Townhouse End Unit
        TwnhsI	Townhouse Inside Unit
 	
-House Style (Nominal): Style of dwelling
+House Style (Nominal): Style of dwelling [styl budynku]
 	
        1Story	One story
        1.5Fin	One and one-half story: 2nd level finished
@@ -171,7 +171,7 @@ House Style (Nominal): Style of dwelling
        SFoyer	Split Foyer
        SLvl	Split Level
 	
-Overall Qual (Ordinal): Rates the overall material and finish of the house
+Overall Qual (Ordinal): Rates the overall material and finish of the house [sjakosc materialow uzytych do wykonczenia domu]
 
        10	Very Excellent
        9	Excellent
@@ -184,7 +184,7 @@ Overall Qual (Ordinal): Rates the overall material and finish of the house
        2	Poor
        1	Very Poor
 	
-Overall Cond (Ordinal): Rates the overall condition of the house
+Overall Cond (Ordinal): Rates the overall condition of the house [ogolny stan wykonczenia domu]
 
        10	Very Excellent
        9	Excellent
@@ -197,11 +197,11 @@ Overall Cond (Ordinal): Rates the overall condition of the house
        2	Poor
        1	Very Poor
 		
-Year Built (Discrete): Original construction date
+Year Built (Discrete): Original construction date [rok budowy]
 
-Year Remod/Add (Discrete): Remodel date (same as construction date if no remodeling or additions)
+Year Remod/Add (Discrete): Remodel date (same as construction date if no remodeling or additions) [rok modernizacji]
 
-Roof Style (Nominal): Type of roof
+Roof Style (Nominal): Type of roof [rodzaj dachu]
 
        Flat	Flat
        Gable	Gable
@@ -210,7 +210,7 @@ Roof Style (Nominal): Type of roof
        Mansard	Mansard
        Shed	Shed
 		
-Roof Matl (Nominal): Roof material
+Roof Matl (Nominal): Roof material [material, z ktorego zrobiono dach]
 
        ClyTile	Clay or Tile
        CompShg	Standard (Composite) Shingle
@@ -221,7 +221,7 @@ Roof Matl (Nominal): Roof material
        WdShake	Wood Shakes
        WdShngl	Wood Shingles
 		
-Exterior 1 (Nominal): Exterior covering on house
+Exterior 1 (Nominal): Exterior covering on house [pokrycie zewnetrzne domu]
 
        AsbShng	Asbestos Shingles
        AsphShn	Asphalt Shingles
@@ -516,13 +516,13 @@ Misc Feature (Nominal): Miscellaneous feature not covered in other categories
        TenC	Tennis Court
        NA	None
 		
-Misc Val (Continuous): $Value of miscellaneous feature
+Misc Val (Continuous): $Value of miscellaneous feature [wartosc dodatkow typu winda, kort tenisowy]
 
-Mo Sold (Discrete): Month Sold (MM)
+Mo Sold (Discrete): Month Sold (MM) [miesiac sprzedazy]
 
-Yr Sold (Discrete): Year Sold (YYYY)
+Yr Sold (Discrete): Year Sold (YYYY) [rok sprzedazy]
 
-Sale Type (Nominal): Type of sale
+Sale Type (Nominal): Type of sale [typ sprzedazy - rodzaj platnosci]
 		
        WD 	Warranty Deed - Conventional
        CWD	Warranty Deed - Cash
@@ -535,7 +535,7 @@ Sale Type (Nominal): Type of sale
        ConLD	Contract Low Down
        Oth	Other
 		
-Sale Condition (Nominal): Condition of sale
+Sale Condition (Nominal): Condition of sale [warunki sprzedazy]
 
        Normal	Normal Sale
        Abnorml	Abnormal Sale -  trade, foreclosure, short sale
@@ -544,5 +544,5 @@ Sale Condition (Nominal): Condition of sale
        Family	Sale between family members
        Partial	Home was not completed when last assessed (associated with New Homes)
 		
-SalePrice (Continuous): Sale price $$
+SalePrice (Continuous): Sale price $$ [cena]
 
