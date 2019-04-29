@@ -241,7 +241,7 @@ Exterior 1 (Nominal): Exterior covering on house [pokrycie zewnetrzne domu]
        Wd Sdng	Wood Siding
        WdShing	Wood Shingles
 	
-Exterior 2 (Nominal): Exterior covering on house (if more than one material)
+Exterior 2 (Nominal): Exterior covering on house (if more than one material) [pokrycie zewnetrzne domu]
 
        AsbShng	Asbestos Shingles
        AsphShn	Asphalt Shingles
@@ -261,7 +261,7 @@ Exterior 2 (Nominal): Exterior covering on house (if more than one material)
        Wd Sdng	Wood Siding
        WdShing	Wood Shingles
 	
-Mas Vnr Type (Nominal): Masonry veneer type
+Mas Vnr Type (Nominal): Masonry veneer type [typ forniru murarskiego]
 
        BrkCmn	Brick Common
        BrkFace	Brick Face
@@ -269,9 +269,9 @@ Mas Vnr Type (Nominal): Masonry veneer type
        None	None
        Stone	Stone
 	
-Mas Vnr Area (Continuous): Masonry veneer area in square feet
+Mas Vnr Area (Continuous): Masonry veneer area in square feet [powierzchnia forniru murarskiego]
 
-Exter Qual (Ordinal): Evaluates the quality of the material on the exterior 
+Exter Qual (Ordinal): Evaluates the quality of the material on the exterior [jakosc materialow na zewn.]
 		
        Ex	Excellent
        Gd	Good
@@ -279,7 +279,7 @@ Exter Qual (Ordinal): Evaluates the quality of the material on the exterior
        Fa	Fair
        Po	Poor
 		
-Exter Cond (Ordinal): Evaluates the present condition of the material on the exterior
+Exter Cond (Ordinal): Evaluates the present condition of the material on the exterior [obecny stan materialow na zewn.]
 		
        Ex	Excellent
        Gd	Good
@@ -287,7 +287,7 @@ Exter Cond (Ordinal): Evaluates the present condition of the material on the ext
        Fa	Fair
        Po	Poor
 		
-Foundation (Nominal): Type of foundation
+Foundation (Nominal): Type of foundation [rodzaj fundamentu]
 		
        BrkTil	Brick & Tile
        CBlock	Cinder Block
@@ -296,7 +296,7 @@ Foundation (Nominal): Type of foundation
        Stone	Stone
        Wood	Wood
 		
-Bsmt Qual (Ordinal): Evaluates the height of the basement
+Bsmt Qual (Ordinal): Evaluates the height of the basement [ocena wysokosci piwnicy]
 
        Ex	Excellent (100+ inches)	
        Gd	Good (90-99 inches)
@@ -305,7 +305,7 @@ Bsmt Qual (Ordinal): Evaluates the height of the basement
        Po	Poor (<70 inches
        NA	No Basement
 		
-Bsmt Cond (Ordinal): Evaluates the general condition of the basement
+Bsmt Cond (Ordinal): Evaluates the general condition of the basement [ocena ogolnego stanu piwnicy]
 
        Ex	Excellent
        Gd	Good
@@ -314,7 +314,7 @@ Bsmt Cond (Ordinal): Evaluates the general condition of the basement
        Po	Poor - Severe cracking, settling, or wetness
        NA	No Basement
 	
-Bsmt Exposure	(Ordinal): Refers to walkout or garden level walls
+Bsmt Exposure	(Ordinal): Refers to walkout or garden level walls [odniesienie do mozliwosci wyjscia lub poziomu ogrodu]
 
        Gd	Good Exposure
        Av	Average Exposure (split levels or foyers typically score average or above)	
@@ -322,7 +322,7 @@ Bsmt Exposure	(Ordinal): Refers to walkout or garden level walls
        No	No Exposure
        NA	No Basement
 	
-BsmtFin Type 1	(Ordinal): Rating of basement finished area
+BsmtFin Type 1	(Ordinal): Rating of basement finished area [ocena wykonczonej powierzchni piwnicy]
 
        GLQ	Good Living Quarters
        ALQ	Average Living Quarters
@@ -332,9 +332,9 @@ BsmtFin Type 1	(Ordinal): Rating of basement finished area
        Unf	Unfinshed
        NA	No Basement
 		
-BsmtFin SF 1 (Continuous): Type 1 finished square feet
+BsmtFin SF 1 (Continuous): Type 1 finished square feet [wykonczona powierzchnia piwnicy]
 
-BsmtFinType 2	(Ordinal): Rating of basement finished area (if multiple types)
+BsmtFinType 2	(Ordinal): Rating of basement finished area (if multiple types) [ocena wykonczonej powierzchni piwnicy, jesli kilka typow]
 
        GLQ	Good Living Quarters
        ALQ	Average Living Quarters
