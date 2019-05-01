@@ -344,13 +344,13 @@ BsmtFinType 2	(Ordinal): Rating of basement finished area (if multiple types) [o
        Unf	Unfinshed
        NA	No Basement
 
-BsmtFin SF 2 (Continuous): Type 2 finished square feet
+BsmtFin SF 2 (Continuous): Type 2 finished square feet [powierzchnia typ 2 piwnicy]
 
-Bsmt Unf SF (Continuous): Unfinished square feet of basement area
+Bsmt Unf SF (Continuous): Unfinished square feet of basement area [niewykonczona powierzchnia piwnicy]
 
-Total Bsmt SF (Continuous): Total square feet of basement area
+Total Bsmt SF (Continuous): Total square feet of basement area [powierzchnia piwnicy]
 
-Heating	(Nominal): Type of heating
+Heating	(Nominal): Type of heating [rodzaj ogrzewania]
 		
        Floor	Floor Furnace
        GasA	Gas forced warm air furnace
@@ -359,7 +359,7 @@ Heating	(Nominal): Type of heating
        OthW	Hot water or steam heat other than gas
        Wall	Wall furnace
 		
-HeatingQC (Ordinal): Heating quality and condition
+HeatingQC (Ordinal): Heating quality and condition [stan ogrzewania]
 
        Ex	Excellent
        Gd	Good
@@ -367,12 +367,12 @@ HeatingQC (Ordinal): Heating quality and condition
        Fa	Fair
        Po	Poor
 		
-Central Air (Nominal): Central air conditioning
+Central Air (Nominal): Central air conditioning [klimatyzacja]
 
        N	No
        Y	Yes
 		
-Electrical (Ordinal): Electrical system
+Electrical (Ordinal): Electrical system [rodzaj systamu elektrycznego]
 
        SBrkr	Standard Circuit Breakers & Romex
        FuseA	Fuse Box over 60 AMP and all Romex wiring (Average)	
@@ -380,27 +380,27 @@ Electrical (Ordinal): Electrical system
        FuseP	60 AMP Fuse Box and mostly knob & tube wiring (poor)
        Mix	Mixed
 		
-1st Flr SF (Continuous): First Floor square feet
+1st Flr SF (Continuous): First Floor square feet [powierzchnia pierwszego pietra]
  
-2nd Flr SF (Continuous)	: Second floor square feet
+2nd Flr SF (Continuous)	: Second floor square feet [powierzchnia drugiego pietra]
 
-Low Qual Fin SF (Continuous): Low quality finished square feet (all floors)
+Low Qual Fin SF (Continuous): Low quality finished square feet (all floors) [powierzchnia o niskiej jakosci]
 
-Gr Liv Area (Continuous): Above grade (ground) living area square feet
+Gr Liv Area (Continuous): Above grade (ground) living area square feet [powierzchnia uzytkowa]
 
-Bsmt Full Bath (Discrete): Basement full bathrooms
+Bsmt Full Bath (Discrete): Basement full bathrooms [liczba lazienek w piwnicy]
 
-Bsmt Half Bath (Discrete): Basement half bathrooms
+Bsmt Half Bath (Discrete): Basement half bathrooms [liczba lazienek czesciowo w piwnicy]
 
-Full Bath (Discrete): Full bathrooms above grade
+Full Bath (Discrete): Full bathrooms above grade [liczba lazienek]
 
-Half Bath (Discrete): Half baths above grade
+Half Bath (Discrete): Half baths above grade [liczba pol-lazienek]
 
-Bedroom (Discrete): Bedrooms above grade (does NOT include basement bedrooms)
+Bedroom (Discrete): Bedrooms above grade (does NOT include basement bedrooms) [liczba sypialni]
 
-Kitchen (Discrete): Kitchens above grade
+Kitchen (Discrete): Kitchens above grade [liczba kuchnii]
 
-KitchenQual (Ordinal): Kitchen quality
+KitchenQual (Ordinal): Kitchen quality [stan kuchni]
 
        Ex	Excellent
        Gd	Good
@@ -408,9 +408,9 @@ KitchenQual (Ordinal): Kitchen quality
        Fa	Fair
        Po	Poor
        	
-TotRmsAbvGrd	(Discrete): Total rooms above grade (does not include bathrooms)
+TotRmsAbvGrd	(Discrete): Total rooms above grade (does not include bathrooms) [liczba pokoi]
 
-Functional (Ordinal): Home functionality (Assume typical unless deductions are warranted)
+Functional (Ordinal): Home functionality (Assume typical unless deductions are warranted) [funkcjonalnosc domu]
 
        Typ	Typical Functionality
        Min1	Minor Deductions 1
@@ -421,9 +421,9 @@ Functional (Ordinal): Home functionality (Assume typical unless deductions are w
        Sev	Severely Damaged
        Sal	Salvage only
 		
-Fireplaces (Discrete): Number of fireplaces
+Fireplaces (Discrete): Number of fireplaces [liczba kominkow]
 
-FireplaceQu (Ordinal): Fireplace quality
+FireplaceQu (Ordinal): Fireplace quality [stan kominka]
 
        Ex	Excellent - Exceptional Masonry Fireplace
        Gd	Good - Masonry Fireplace in main level
@@ -432,7 +432,7 @@ FireplaceQu (Ordinal): Fireplace quality
        Po	Poor - Ben Franklin Stove
        NA	No Fireplace
 		
-Garage Type (Nominal): Garage location
+Garage Type (Nominal): Garage location [Lokalizacja garazu]
 		
        2Types	More than one type of garage
        Attchd	Attached to home
@@ -442,29 +442,20 @@ Garage Type (Nominal): Garage location
        Detchd	Detached from home
        NA	No Garage
 		
-Garage Yr Blt (Discrete): Year garage was built
+Garage Yr Blt (Discrete): Year garage was built [Rok budowy garazu]
 		
-Garage Finish (Ordinal)	: Interior finish of the garage
+Garage Finish (Ordinal)	: Interior finish of the garage [stan wykonczenia garazu]
 
        Fin	Finished
        RFn	Rough Finished	
        Unf	Unfinished
        NA	No Garage
 		
-Garage Cars (Discrete): Size of garage in car capacity
+Garage Cars (Discrete): Size of garage in car capacity [powierzchnia garazu - samochod]
 
-Garage Area (Continuous): Size of garage in square feet
+Garage Area (Continuous): Size of garage in square feet [powierzchnia garazu]
 
-Garage Qual (Ordinal): Garage quality
-
-       Ex	Excellent
-       Gd	Good
-       TA	Typical/Average
-       Fa	Fair
-       Po	Poor
-       NA	No Garage
-		
-Garage Cond (Ordinal): Garage condition
+Garage Qual (Ordinal): Garage quality [Jakosc garazu]
 
        Ex	Excellent
        Gd	Good
@@ -473,25 +464,34 @@ Garage Cond (Ordinal): Garage condition
        Po	Poor
        NA	No Garage
 		
-Paved Drive (Ordinal): Paved driveway
+Garage Cond (Ordinal): Garage condition [Stan garazu]
+
+       Ex	Excellent
+       Gd	Good
+       TA	Typical/Average
+       Fa	Fair
+       Po	Poor
+       NA	No Garage
+		
+Paved Drive (Ordinal): Paved driveway [Utwardzony podjazd]
 
        Y	Paved 
        P	Partial Pavement
        N	Dirt/Gravel
 		
-Wood Deck SF (Continuous): Wood deck area in square feet
+Wood Deck SF (Continuous): Wood deck area in square feet [powierzchnia pietra w drewnie]
 
-Open Porch SF (Continuous): Open porch area in square feet
+Open Porch SF (Continuous): Open porch area in square feet [powierzchnia ganku otwartego]
 
-Enclosed Porch (Continuous): Enclosed porch area in square feet
+Enclosed Porch (Continuous): Enclosed porch area in square feet [powierzchnia ganku zamknietego]
 
-3-Ssn Porch (Continuous): Three season porch area in square feet
+3-Ssn Porch (Continuous): Three season porch area in square feet [powierzchnia ganku]
 
-Screen Porch (Continuous): Screen porch area in square feet
+Screen Porch (Continuous): Screen porch area in square feet [powierzchnia ganka]
 
 Pool Area (Continuous): Pool area in square feet
 
-Pool QC (Ordinal): Pool quality
+Pool QC (Ordinal): Pool quality [stan basenu]
 		
        Ex	Excellent
        Gd	Good
@@ -499,7 +499,7 @@ Pool QC (Ordinal): Pool quality
        Fa	Fair
        NA	No Pool
 		
-Fence (Ordinal): Fence quality
+Fence (Ordinal): Fence quality [stan plotu]
 		
        GdPrv	Good Privacy
        MnPrv	Minimum Privacy
@@ -507,7 +507,7 @@ Fence (Ordinal): Fence quality
        MnWw	Minimum Wood/Wire
        NA	No Fence
 	
-Misc Feature (Nominal): Miscellaneous feature not covered in other categories
+Misc Feature (Nominal): Miscellaneous feature not covered in other categories [dodatki nie ujete w innych kategoriach]
 		
        Elev	Elevator
        Gar2	2nd Garage (if not described in garage section)
