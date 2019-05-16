@@ -451,7 +451,7 @@ Garage Finish (Ordinal)	: Interior finish of the garage [stan wykonczenia garazu
        Unf	Unfinished
        NA	No Garage
 		
-Garage Cars (Discrete): Size of garage in car capacity [powierzchnia garazu - samochod]
+Garage Cars (Discrete): Size of garage in car capacity [liczba samochodow mieszczacych sie w garazu]
 
 Garage Area (Continuous): Size of garage in square feet [powierzchnia garazu]
 
